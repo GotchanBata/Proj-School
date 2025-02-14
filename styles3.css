@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    
+    font-family: Helvetica,'Segoe UI', Tahoma, Verdana, sans-serif sans-serif;
+    background-color: #000000;
+    color: #d13535;
+    
+}
+
+
+
+.container {
+    max-width: 1000px;
+
+    display: flex ;
+    flex-direction: column;
+}
+
+.news{
+    display: block;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+article img{
+    display: block;
+    margin: auto;
+}
+
+article div{
+    border: 2px solid rgb(173, 162, 162);
+    padding: 50px;
+    font-size:  1.5em;
+
+    border-radius: 10px;
+}
+
+.card{
+    border: 2px solid rgb(173, 162, 162);
+    padding: 50px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    margin-left:50px;
+
+    max-height: 300px;
+    max-width: 200px;
+
+    border-radius: 10px;
+
+
+    background-color:rgb(19, 15, 10);
+    display: inline-block;
+
+    transition: 500ms;
+}
+
+.card img{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+
+    transition: 500ms;
+}
+
+
+
+
+
+
+
+.card p{
+    display: inline-block;
+    min-height: 100px;
+    
+}
+.card:hover{
+    background-color: rgb(39, 32, 32);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.card img:hover{
+    background-color: rgb(209, 147, 75);
+}
+
+@media screen and (max-width:440px) {
+    .card img{
+        
+        border-radius: 10px;
+        border: 2px solid black;
+    
+        transition: 500ms;
+    }
+    
+     p{
+        display: inline-block;
+        min-height: 100px;
+        background-color: blanchedalmond;
+        
+    }
+}
