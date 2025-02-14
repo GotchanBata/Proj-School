@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-size: 24px;
+  }
+
+
+  .last-notes {
+    grid-area: a;
+  }
+  .note-name{
+    grid-area: b;
+  }
+  .note {
+    grid-area: c;
+  }
+  .act {
+    grid-area: d;
+  }
+
+  .last-notes,.act,.note,.note-name{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #A6B2EC;
+  }
+
+  .container {
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+    margin: 10px;
+    background-color: #F4ACC4;
+    grid-template-rows: 50px;
+    /* ! */
+    grid-template-areas:
+      "a  b b b b b b  d"
+      "a  c c c c c c  d"
+      "a  c c c c c c  d"
+      "a  c c c c c c  d"
+      "a  c c c c c c  d";
+  }
+
+
+  button,textarea{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  textarea { 
+    resize: none;
+    height: 90%;
+    width: 100%;
+
+}
